@@ -1,5 +1,7 @@
 const express = require('express');
 
+const auth = require('./auth/auth.routes');
+
 const router = express.Router();
 
 router.get('/', (req, res) => {
@@ -7,5 +9,7 @@ router.get('/', (req, res) => {
     message: 'Root level for API',
   });
 });
+
+router.use('/auth', auth);
 
 module.exports = router;

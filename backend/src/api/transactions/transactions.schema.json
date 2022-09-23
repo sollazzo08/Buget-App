@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "type": "object",
+  "title": "Product",
+  "description": "The Transaction",
+  "required": [
+    "user_id"  
+],
+"additionalProperties": false,
+"properties": {
+    "id": {
+        "$id": "#/properties/id",
+        "type": "integer",
+        "title": "The database ID of the Transaction."
+    },
+    "user_id": {
+        "$id": "#/properties/user_id",
+        "$type": "number",
+        "$title": "The id of the User"
+    },
+    "payee": {
+        "$id": "#/properties/payee",
+        "$type": "string",
+        "$title": "The merchant or person recieving the payment"
+    },
+    "amount": {
+        "$id": "#/properties/amount",
+        "minimum": 0,
+        "type": "number",
+        "$title": "The amount of the transaction"
+    },
+    "date": {
+        "$id": "#/properties/id",
+        "type": "string",
+        "format": "date",
+        "$title": "The date of the transaction"
+    },
+    "transaction_type_id": {
+        "$id": "#/properties/transaction_type_id",
+        "type": "number",
+        "$title": "The id of the Transaction Type"
+    },
+    "status_id": {
+        "$id": "#/properties/status_id",
+        "type": "number",
+        "$title": "The id of the Status"
+    },
+    "envelope_id": {
+        "$id": "#/properties/envelope_id",
+        "type": "number",
+        "$title": "The id of the Evelope"
+    }   
+}
+}

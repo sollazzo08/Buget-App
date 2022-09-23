@@ -1,4 +1,4 @@
-const tableNames = require('../../src/constants/tableNames');
+const tableNames = require('../../src/constants/tableNames.ts');
 const { references } = require('../../src/lib/tableUtils');
 /**
  * @param { import("knex").Knex } knex

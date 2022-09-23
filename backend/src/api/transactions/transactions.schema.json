@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema",
   "type": "object",
-  "title": "Product",
+  "title": "Transaction",
   "description": "The Transaction",
   "required": [
     "user_id"  
